@@ -25,9 +25,37 @@ class Number : AppCompatActivity() {
             Snackbar.make(view, "Replace with your own action", Snackbar.LENGTH_LONG)
                     .setAction("Action", null).show()
         }
-        var ArrayNumber = resources.getStringArray(R.array.N1S1)
+
 
         if (niveau=="niveau1") {
+            var ArrayNumber = resources.getStringArray(R.array.N1S1)
+            tv1.setText(ArrayNumber[0])
+            tv2.setText(ArrayNumber[1])
+            tv3.setText(ArrayNumber[2])
+            tv4.setText(ArrayNumber[3])
+            tv5.setText(ArrayNumber[4])
+            tv6.setText(ArrayNumber[5])
+        }
+        if (niveau=="niveau2") {
+            var ArrayNumber = resources.getStringArray(R.array.N1S2)
+            tv1.setText(ArrayNumber[0])
+            tv2.setText(ArrayNumber[1])
+            tv3.setText(ArrayNumber[2])
+            tv4.setText(ArrayNumber[3])
+            tv5.setText(ArrayNumber[4])
+            tv6.setText(ArrayNumber[5])
+        }
+        if (niveau=="niveau3") {
+            var ArrayNumber = resources.getStringArray(R.array.N1S3)
+            tv1.setText(ArrayNumber[0])
+            tv2.setText(ArrayNumber[1])
+            tv3.setText(ArrayNumber[2])
+            tv4.setText(ArrayNumber[3])
+            tv5.setText(ArrayNumber[4])
+            tv6.setText(ArrayNumber[5])
+        }
+        if (niveau=="niveau4") {
+            var ArrayNumber = resources.getStringArray(R.array.N1S4)
             tv1.setText(ArrayNumber[0])
             tv2.setText(ArrayNumber[1])
             tv3.setText(ArrayNumber[2])

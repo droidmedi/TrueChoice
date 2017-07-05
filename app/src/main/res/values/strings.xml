@@ -27,8 +27,46 @@
         <item>2</item>
         <item>1</item>
         <item>1</item>
-
-
+   </string-array>
+    <string-array name="N1S2">
+        <item>3</item>
+        <item>3</item>
+        <item>3</item>
+        <item>6</item>
+        <item>3</item>
+        <item>3</item>
+    </string-array>
+    <string-array name="N1S3">
+        <item>12</item>
+        <item>12</item>
+        <item>12</item>
+        <item>12</item>
+        <item>12</item>
+        <item>13</item>
+    </string-array>
+    <string-array name="N1S4">
+        <item>77</item>
+        <item>77</item>
+        <item>77</item>
+        <item>77</item>
+        <item>11</item>
+        <item>77</item>
+    </string-array>
+    <string-array name="N1S5">
+        <item>1</item>
+        <item>1</item>
+        <item>1</item>
+        <item>2</item>
+        <item>1</item>
+        <item>1</item>
+    </string-array>
+    <string-array name="N1S6">
+        <item>1</item>
+        <item>1</item>
+        <item>1</item>
+        <item>2</item>
+        <item>1</item>
+        <item>1</item>
     </string-array>
 
 </resources>
