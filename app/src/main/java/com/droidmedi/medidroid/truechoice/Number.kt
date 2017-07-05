@@ -35,6 +35,9 @@ class Number : AppCompatActivity() {
             tv4.setText(ArrayNumber[3])
             tv5.setText(ArrayNumber[4])
             tv6.setText(ArrayNumber[5])
+            progressBar.setBackgroundResource(R.color.colorAccent);
+            progressBar.incrementProgressBy(50)
+            progressBar.incrementProgressBy(15)
         }
         if (niveau=="niveau2") {
             var ArrayNumber = resources.getStringArray(R.array.N1S2)
