@@ -12,6 +12,11 @@ import kotlinx.android.synthetic.main.content_number.*
 
 
 class Number : AppCompatActivity() {
+    internal var serieN1 = intArrayOf(R.array.N1S1, R.array.N1S2, R.array.N1S3, R.array.N1S4, R.array.N1S5, R.array.N1S6, R.array.N1S7, R.array.N1S8, R.array.N1S9 , R.array.N1S10)
+    internal var i = 0
+    internal var k = 0
+
+    internal lateinit var ArrayNumber: Array<String>
 
 
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -26,47 +31,73 @@ class Number : AppCompatActivity() {
                     .setAction("Action", null).show()
         }
 
-
         if (niveau=="niveau1") {
-            var ArrayNumber = resources.getStringArray(R.array.N1S1)
-            tv1.setText(ArrayNumber[0])
-            tv2.setText(ArrayNumber[1])
-            tv3.setText(ArrayNumber[2])
-            tv4.setText(ArrayNumber[3])
-            tv5.setText(ArrayNumber[4])
-            tv6.setText(ArrayNumber[5])
-            progressBar.setBackgroundResource(R.color.colorAccent);
-            progressBar.incrementProgressBy(50)
-            progressBar.incrementProgressBy(15)
+            ArrayNumber = resources.getStringArray(serieN1[i])
         }
-        if (niveau=="niveau2") {
-            var ArrayNumber = resources.getStringArray(R.array.N1S2)
-            tv1.setText(ArrayNumber[0])
-            tv2.setText(ArrayNumber[1])
-            tv3.setText(ArrayNumber[2])
-            tv4.setText(ArrayNumber[3])
-            tv5.setText(ArrayNumber[4])
-            tv6.setText(ArrayNumber[5])
+        changearray(i)
+
+        case1.setOnClickListener {
+            k=k+1
+            i=i+1
+            resultat(1)
+
+
         }
-        if (niveau=="niveau3") {
-            var ArrayNumber = resources.getStringArray(R.array.N1S3)
-            tv1.setText(ArrayNumber[0])
-            tv2.setText(ArrayNumber[1])
-            tv3.setText(ArrayNumber[2])
-            tv4.setText(ArrayNumber[3])
-            tv5.setText(ArrayNumber[4])
-            tv6.setText(ArrayNumber[5])
+        case2.setOnClickListener {
+            k=k+1
+            i=i+1
+            resultat(2)
+
         }
-        if (niveau=="niveau4") {
-            var ArrayNumber = resources.getStringArray(R.array.N1S4)
-            tv1.setText(ArrayNumber[0])
-            tv2.setText(ArrayNumber[1])
-            tv3.setText(ArrayNumber[2])
-            tv4.setText(ArrayNumber[3])
-            tv5.setText(ArrayNumber[4])
-            tv6.setText(ArrayNumber[5])
+        case3.setOnClickListener {
+            k=k+1
+            i=i+1
+            resultat(3)
+            changearray(i)
+        }
+        case4.setOnClickListener {
+            k=k+1
+            i=i+1
+            resultat(4)
+
+        }
+        case5.setOnClickListener {
+            k=k+1
+            i=i+1
+            resultat(5)
+
+        }
+        case6.setOnClickListener {
+            k=k+1
+            i=i+1
+            resultat(6)
+
         }
 
+    }
+
+    private fun  resultat(j: Int) {
+        if (k==9){
+            finish()
+
+        }
+
+
+        if (k<11){
+            changearray(i)
+        }
+
+
+    }
+
+    private fun  changearray(i: Int) {
+        ArrayNumber = resources.getStringArray(serieN1[i])
+        tv1.setText(ArrayNumber[0])
+        tv2.setText(ArrayNumber[1])
+        tv3.setText(ArrayNumber[2])
+        tv4.setText(ArrayNumber[3])
+        tv5.setText(ArrayNumber[4])
+        tv6.setText(ArrayNumber[5])
     }
 
 }

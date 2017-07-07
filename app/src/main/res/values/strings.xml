@@ -53,20 +53,52 @@
         <item>77</item>
     </string-array>
     <string-array name="N1S5">
+        <item>0</item>
+        <item>0</item>
+        <item>0</item>
         <item>1</item>
-        <item>1</item>
-        <item>1</item>
-        <item>2</item>
-        <item>1</item>
-        <item>1</item>
+        <item>0</item>
+        <item>0</item>
     </string-array>
     <string-array name="N1S6">
-        <item>1</item>
-        <item>1</item>
+        <item>5</item>
+        <item>5</item>
+        <item>7</item>
+        <item>5</item>
+        <item>5</item>
+        <item>5</item>
+    </string-array>
+    <string-array name="N1S7">
+        <item>4</item>
+        <item>4</item>
+        <item>2</item>
+        <item>4</item>
+        <item>4</item>
+        <item>4</item>
+    </string-array>
+    <string-array name="N1S8">
+        <item>2</item>
+        <item>4</item>
+        <item>5</item>
+        <item>8</item>
+        <item>10</item>
+        <item>12</item>
+    </string-array>
+    <string-array name="N1S9">
         <item>1</item>
         <item>2</item>
-        <item>1</item>
-        <item>1</item>
+        <item>3</item>
+        <item>4</item>
+        <item>7</item>
+        <item>6</item>
+    </string-array>
+    <string-array name="N1S10">
+        <item>3</item>
+        <item>3</item>
+        <item>3</item>
+        <item>2</item>
+        <item>3</item>
+        <item>3</item>
     </string-array>
 
 </resources>
