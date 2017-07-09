@@ -14,8 +14,6 @@ import kotlinx.android.synthetic.main.content_acceuil.*
 
 var page =""
 
-
-
 class Acceuil : AppCompatActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
