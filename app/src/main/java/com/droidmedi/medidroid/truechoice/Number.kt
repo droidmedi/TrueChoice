@@ -1,20 +1,22 @@
 package com.droidmedi.medidroid.truechoice
 
+import android.media.MediaPlayer
 import android.os.Bundle
 import android.support.design.widget.FloatingActionButton
 import android.support.design.widget.Snackbar
 import android.support.v7.app.AppCompatActivity
 import android.support.v7.widget.Toolbar
-import android.view.View
-import kotlinx.android.synthetic.main.activity_number.*
+import android.widget.Toast
 import kotlinx.android.synthetic.main.content_number.*
 
-
+var scor =0
 
 class Number : AppCompatActivity() {
     internal var serieN1 = intArrayOf(R.array.N1S1, R.array.N1S2, R.array.N1S3, R.array.N1S4, R.array.N1S5, R.array.N1S6, R.array.N1S7, R.array.N1S8, R.array.N1S9 , R.array.N1S10)
     internal var i = 0
-    internal var k = 0
+    internal var sn = 0
+    var tn =""
+    var cn=""
 
     internal lateinit var ArrayNumber: Array<String>
 
@@ -33,71 +35,147 @@ class Number : AppCompatActivity() {
 
         if (niveau=="niveau1") {
             ArrayNumber = resources.getStringArray(serieN1[i])
+
         }
         changearray(i)
 
         case1.setOnClickListener {
-            k=k+1
+            sn=sn+1
+            cn = tv1.text as String
             i=i+1
-            resultat(1)
+
+            resultat(tn,cn)
 
 
         }
         case2.setOnClickListener {
-            k=k+1
+            sn=sn+1
+            cn = tv2.text as String
             i=i+1
-            resultat(2)
+            resultat(tn, cn)
 
         }
         case3.setOnClickListener {
-            k=k+1
+            sn=sn+1
+            cn = tv3.text as String
             i=i+1
-            resultat(3)
+            resultat(tn, cn)
             changearray(i)
         }
         case4.setOnClickListener {
-            k=k+1
+            sn=sn+1
+            cn = tv4.text as String
             i=i+1
-            resultat(4)
+            resultat(tn, cn)
 
         }
         case5.setOnClickListener {
-            k=k+1
+            sn=sn+1
+            cn = tv5.text as String
             i=i+1
-            resultat(5)
+            resultat(tn, cn)
 
         }
         case6.setOnClickListener {
-            k=k+1
+            sn=sn+1
+            cn = tv6.text as String
             i=i+1
-            resultat(6)
+            resultat(tn, cn)
 
         }
 
     }
 
-    private fun  resultat(j: Int) {
-        if (k==9){
-            finish()
+    private fun  resultat(tnn: String, cnn: String) {
 
-        }
-
-
-        if (k<11){
+        testresult(niveau ,sn,tnn)
+        if (sn<10 && tnn == cnn){
+            scor = scor +1
+            vrais(tnn)
             changearray(i)
         }
+        if (sn<10 && tnn != cnn) {
+            faux()
+            changearray(i)
+        }
+        if (sn==10 && tnn == cnn){
+            scor = scor +1
+            makesound()
+            Toast.makeText(applicationContext, "votre score et :"+ scor +"/10", Toast.LENGTH_LONG).show()
+            finish()
+        }
+        if (sn==10 && tnn == cnn){
+
+            Toast.makeText(applicationContext, "votre score et :"+ scor +"/10", Toast.LENGTH_LONG).show()
+            finish()
+        }
+
+
+    }
+
+    private fun  testresult(niveau: String, sn: Int, j: String) {
+
+
+    }
+
+    private fun faux() {
+        Toast.makeText(applicationContext, "Faux", Toast.LENGTH_LONG).show()
+        case3.setBackgroundColor(R.color.colorAccent)
+    }
+
+    private fun  vrais(j: String) {
+        Toast.makeText(applicationContext, "Vrais", Toast.LENGTH_LONG).show()
+        makesound()
+        case2.setBackgroundColor(R.color.colorvrais)
+        tv4.setTextColor(R.color.colorvrais)
+
 
 
     }
 
     private fun  changearray(i: Int) {
         ArrayNumber = resources.getStringArray(serieN1[i])
-        tv1.setText(ArrayNumber[0])
-        tv2.setText(ArrayNumber[1])
-        tv3.setText(ArrayNumber[2])
-        tv4.setText(ArrayNumber[3])
-        tv5.setText(ArrayNumber[4])
-        tv6.setText(ArrayNumber[5])
-    }
+        if (ArrayNumber[0].endsWith("v")){
+            tv1.setText(ArrayNumber[0].substring(0,ArrayNumber[0].length-2))
+            tn=ArrayNumber[0].substring(0,ArrayNumber[0].length-1)
+        }
+        else {tv1.setText(ArrayNumber[0])}
 
+        if (ArrayNumber[1].endsWith("v")){
+            tv2.setText(ArrayNumber[1].substring(0,ArrayNumber[1].length-2))
+            tn=ArrayNumber[1].substring(0,ArrayNumber[1].length-2)
+        }
+        else {tv2.setText(ArrayNumber[1])}
+
+        if (ArrayNumber[2].endsWith("v")){
+            tv3.setText(ArrayNumber[2].substring(0,ArrayNumber[2].length-2))
+            tn=ArrayNumber[2].substring(0,ArrayNumber[2].length-2)
+        }
+        else {tv3.setText(ArrayNumber[1])}
+
+        if (ArrayNumber[3].endsWith("v")){
+            tv4.setText(ArrayNumber[3].substring(0,ArrayNumber[3].length-2))
+            tn=ArrayNumber[3].substring(0,ArrayNumber[3].length-2)
+        }
+        else {tv4.setText(ArrayNumber[1])}
+
+        if (ArrayNumber[4].endsWith("v")){
+            tv5.setText(ArrayNumber[4].substring(0,ArrayNumber[4].length-2))
+            tn=ArrayNumber[4].substring(0,ArrayNumber[4].length-2)
+        }
+        else {tv5.setText(ArrayNumber[4])}
+
+        if (ArrayNumber[5].endsWith("v")){
+            tv6.setText(ArrayNumber[5].substring(0,ArrayNumber[5].length-2))
+            tn=ArrayNumber[5].substring(0,ArrayNumber[5].length-2)
+        }
+        else {tv6.setText(ArrayNumber[5])}
+
+    }
+   fun makesound() {
+       val mPlayer2: MediaPlayer
+       mPlayer2 = MediaPlayer.create(this, R.raw.soundvrais)
+       mPlayer2.start()
+
+    }
 }

@@ -60,7 +60,7 @@
                         android:id="@+id/tv1"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="tv1"
+                        android:text="@string/tv1"
                         android:textSize="30sp"
                         android:textStyle="bold" />
                 </TableRow>
@@ -83,7 +83,7 @@
                         android:id="@+id/tv2"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="tv2"
+                        android:text="@string/tv2"
                         android:textSize="30sp"
                         android:textStyle="bold" />
                 </TableRow>
@@ -106,7 +106,7 @@
                         android:id="@+id/tv3"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="tv3"
+                        android:text="@string/tv3"
                         android:textSize="30sp"
                         android:textStyle="bold" />
                 </TableRow>
@@ -135,7 +135,7 @@
                         android:id="@+id/tv4"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="tv4"
+                        android:text="@string/tv4"
                         android:textSize="30sp"
                         android:textStyle="bold" />
                 </TableRow>
@@ -158,7 +158,7 @@
                         android:id="@+id/tv5"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="tv5"
+                        android:text="@string/tv5"
                         android:textSize="30sp"
                         android:textStyle="bold" />
                 </TableRow>
@@ -181,7 +181,7 @@
                         android:id="@+id/tv6"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="tv6"
+                        android:text="@string/tv6"
                         android:textSize="30sp"
                         android:textStyle="bold" />
                 </TableRow>
