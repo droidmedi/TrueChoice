@@ -12,9 +12,9 @@ import kotlinx.android.synthetic.main.content_number.*
 var scor =0
 
 class Number : AppCompatActivity() {
-    internal var serieN1 = intArrayOf(R.array.N1S1, R.array.N1S2, R.array.N1S3, R.array.N1S4, R.array.N1S5, R.array.N1S6, R.array.N1S7, R.array.N1S8, R.array.N1S9 , R.array.N1S10)
+    internal var serieN1 = intArrayOf(R.array.N1S1, R.array.N1S2, R.array.N1S3, R.array.N1S4, R.array.N1S5, R.array.N1S6, R.array.N1S7, R.array.N1S8, R.array.N1S9 , R.array.N1S10,R.array.N1S11)
     internal var i = 0
-    internal var sn = 0
+    internal var sn = 1
     var tn =""
     var cn=""
 
@@ -35,6 +35,7 @@ class Number : AppCompatActivity() {
 
         if (niveau=="niveau1") {
             ArrayNumber = resources.getStringArray(serieN1[i])
+            scor =0
 
         }
         changearray(i)
@@ -42,74 +43,73 @@ class Number : AppCompatActivity() {
         case1.setOnClickListener {
             sn=sn+1
             cn = tv1.text as String
-            i=i+1
-
             resultat(tn,cn)
+            changearray(i)
 
 
         }
         case2.setOnClickListener {
             sn=sn+1
             cn = tv2.text as String
-            i=i+1
             resultat(tn, cn)
+            changearray(i)
 
         }
         case3.setOnClickListener {
             sn=sn+1
             cn = tv3.text as String
-            i=i+1
             resultat(tn, cn)
             changearray(i)
+
         }
         case4.setOnClickListener {
             sn=sn+1
             cn = tv4.text as String
-            i=i+1
             resultat(tn, cn)
+            changearray(i)
 
         }
         case5.setOnClickListener {
             sn=sn+1
             cn = tv5.text as String
-            i=i+1
             resultat(tn, cn)
+            changearray(i)
 
         }
         case6.setOnClickListener {
             sn=sn+1
             cn = tv6.text as String
-            i=i+1
             resultat(tn, cn)
-
         }
 
     }
 
     private fun  resultat(tnn: String, cnn: String) {
+        i=i+1
+     //   Toast.makeText(applicationContext, "fin oslna" + i , Toast.LENGTH_LONG).show()
 
         testresult(niveau ,sn,tnn)
-        if (sn<10 && tnn == cnn){
+        if (i<10 && tnn == cnn){
             scor = scor +1
             vrais(tnn)
-            changearray(i)
+
         }
-        if (sn<10 && tnn != cnn) {
+        if (i<10 && tnn != cnn) {
             faux()
-            changearray(i)
         }
-        if (sn==10 && tnn == cnn){
-            scor = scor +1
-            makesound()
-            Toast.makeText(applicationContext, "votre score et :"+ scor +"/10", Toast.LENGTH_LONG).show()
-            finish()
-        }
-        if (sn==10 && tnn == cnn){
+        if (i==10 ){
+          if (tnn == cnn) {
+              scor = scor + 1
+              makesound()
+              Toast.makeText(applicationContext, "votre score et :" + scor + "/10", Toast.LENGTH_LONG).show()
+              finish()
+          }
+            else{
+              Toast.makeText(applicationContext, "votre score et :"+ scor +"/10", Toast.LENGTH_LONG).show()
+              finish()
+          }
 
-            Toast.makeText(applicationContext, "votre score et :"+ scor +"/10", Toast.LENGTH_LONG).show()
-            finish()
         }
-
 
     }
 
@@ -119,15 +119,15 @@ class Number : AppCompatActivity() {
     }
 
     private fun faux() {
-        Toast.makeText(applicationContext, "Faux", Toast.LENGTH_LONG).show()
-        case3.setBackgroundColor(R.color.colorAccent)
+       Toast.makeText(applicationContext, "Faux", Toast.LENGTH_LONG).show()
+    //    case3.setBackgroundColor(R.color.colorAccent)
     }
 
     private fun  vrais(j: String) {
         Toast.makeText(applicationContext, "Vrais", Toast.LENGTH_LONG).show()
         makesound()
-        case2.setBackgroundColor(R.color.colorvrais)
-        tv4.setTextColor(R.color.colorvrais)
+      //  case2.setBackgroundColor(R.color.colorvrais)
+      //  tv4.setTextColor(R.color.colorvrais)
 
 
 

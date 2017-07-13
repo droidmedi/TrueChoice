@@ -114,5 +114,13 @@
         <item>3</item>
         <item>3</item>
     </string-array>
+    <string-array name="N1S12">
+        <item>3</item>
+        <item>3</item>
+        <item>3</item>
+        <item>2 v</item>
+        <item>3</item>
+        <item>3</item>
+    </string-array>
 
 </resources>
