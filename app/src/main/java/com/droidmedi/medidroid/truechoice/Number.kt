@@ -13,6 +13,8 @@ var scor =0
 
 class Number : AppCompatActivity() {
     internal var serieN1 = intArrayOf(R.array.N1S1, R.array.N1S2, R.array.N1S3, R.array.N1S4, R.array.N1S5, R.array.N1S6, R.array.N1S7, R.array.N1S8, R.array.N1S9 , R.array.N1S10,R.array.N1S11)
+    internal var serieN2 = intArrayOf(R.array.N2S1, R.array.N2S2, R.array.N2S3, R.array.N2S4, R.array.N2S5, R.array.N2S6, R.array.N2S7, R.array.N2S8, R.array.N2S9 , R.array.N2S10,R.array.N2S11)
+
     internal var i = 0
     internal var sn = 1
     var tn =""
@@ -38,14 +40,18 @@ class Number : AppCompatActivity() {
             scor =0
 
         }
+        if (niveau=="niveau2") {
+            ArrayNumber = resources.getStringArray(serieN2[i])
+            scor =0
+
+        }
         changearray(i)
 
         case1.setOnClickListener {
             sn=sn+1
             cn = tv1.text as String
-            resultat(tn,cn)
+            resultat(tn, cn)
             changearray(i)
-
 
         }
         case2.setOnClickListener {
@@ -80,16 +86,23 @@ class Number : AppCompatActivity() {
             sn=sn+1
             cn = tv6.text as String
             resultat(tn, cn)
+            changearray(i)
         }
 
     }
 
     private fun  resultat(tnn: String, cnn: String) {
         i=i+1
-     //   Toast.makeText(applicationContext, "fin oslna" + i , Toast.LENGTH_LONG).show()
+      //  Toast.makeText(applicationContext, "fin oslna" + i , Toast.LENGTH_LONG).show()
 
-        testresult(niveau ,sn,tnn)
-        if (i<10 && tnn == cnn){
+     //  testresult(niveau ,sn,tnn)
+        Toast.makeText(applicationContext, "ha sahih " + tnn +" ha selected "+ cnn +"ha i "+i , Toast.LENGTH_LONG).show()
+        if (i==1 && tnn.equals(cnn)){
+            scor = scor +1
+            vrais(tnn)
+
+        }
+        if (i<10 && tnn.equals(cnn)){
             scor = scor +1
             vrais(tnn)
 
@@ -111,12 +124,10 @@ class Number : AppCompatActivity() {
 
         }
 
-    }
-
-    private fun  testresult(niveau: String, sn: Int, j: String) {
-
 
     }
+
+
 
     private fun faux() {
        Toast.makeText(applicationContext, "Faux", Toast.LENGTH_LONG).show()
@@ -134,7 +145,11 @@ class Number : AppCompatActivity() {
     }
 
     private fun  changearray(i: Int) {
-        ArrayNumber = resources.getStringArray(serieN1[i])
+        if (niveau=="niveau1") {
+        ArrayNumber = resources.getStringArray(serieN1[i])}
+        if (niveau=="niveau2") {
+            ArrayNumber = resources.getStringArray(serieN2[i])}
+
         if (ArrayNumber[0].endsWith("v")){
             tv1.setText(ArrayNumber[0].substring(0,ArrayNumber[0].length-2))
             tn=ArrayNumber[0].substring(0,ArrayNumber[0].length-1)
@@ -151,13 +166,13 @@ class Number : AppCompatActivity() {
             tv3.setText(ArrayNumber[2].substring(0,ArrayNumber[2].length-2))
             tn=ArrayNumber[2].substring(0,ArrayNumber[2].length-2)
         }
-        else {tv3.setText(ArrayNumber[1])}
+        else {tv3.setText(ArrayNumber[2])}
 
         if (ArrayNumber[3].endsWith("v")){
             tv4.setText(ArrayNumber[3].substring(0,ArrayNumber[3].length-2))
             tn=ArrayNumber[3].substring(0,ArrayNumber[3].length-2)
         }
-        else {tv4.setText(ArrayNumber[1])}
+        else {tv4.setText(ArrayNumber[3])}
 
         if (ArrayNumber[4].endsWith("v")){
             tv5.setText(ArrayNumber[4].substring(0,ArrayNumber[4].length-2))

@@ -28,9 +28,9 @@
 
     <string-array name="N1S1">
         <item>1</item>
-        <item>1</item>
-        <item>1</item>
         <item>2 v</item>
+        <item>1</item>
+        <item>1</item>
         <item>1</item>
         <item>1</item>
    </string-array>
@@ -38,9 +38,9 @@
         <item>3</item>
         <item>3</item>
         <item>3</item>
-        <item>7 v</item>
         <item>3</item>
         <item>3</item>
+        <item>7</item>
     </string-array>
     <string-array name="N1S3">
         <item>12</item>
@@ -94,8 +94,8 @@
         <item>1</item>
         <item>2</item>
         <item>3</item>
-        <item>4</item>
         <item>7 v</item>
+        <item>5</item>
         <item>6</item>
     </string-array>
     <string-array name="N1S10">
@@ -122,5 +122,101 @@
         <item>3</item>
         <item>3</item>
     </string-array>
-
+    <!-- ............................niveveau2........................... -->
+    <string-array name="N2S1">
+        <item>2</item>
+        <item>2</item>
+        <item>2</item>
+        <item>1 v</item>
+        <item>2</item>
+        <item>2</item>
+    </string-array>
+    <string-array name="N2S2">
+        <item>6</item>
+        <item>3 v</item>
+        <item>4</item>
+        <item>8</item>
+        <item>4</item>
+        <item>8</item>
+    </string-array>
+    <string-array name="N2S3">
+        <item>12</item>
+        <item>14</item>
+        <item>12</item>
+        <item>12</item>
+        <item>11 v</item>
+        <item>16</item>
+    </string-array>
+    <string-array name="N2S4">
+        <item>70</item>
+        <item>77 v</item>
+        <item>78</item>
+        <item>76</item>
+        <item>14</item>
+        <item>72</item>
+    </string-array>
+    <string-array name="N2S5">
+        <item>22</item>
+        <item>44</item>
+        <item>33 v</item>
+        <item>66</item>
+        <item>88</item>
+        <item>44</item>
+    </string-array>
+    <string-array name="N2S6">
+        <item>212</item>
+        <item>434</item>
+        <item>343 v</item>
+        <item>454</item>
+        <item>656</item>
+        <item>878</item>
+    </string-array>
+    <string-array name="N2S7">
+        <item>124</item>
+        <item>986</item>
+        <item>564</item>
+        <item>652</item>
+        <item>670</item>
+        <item>461 v</item>
+    </string-array>
+    <string-array name="N2S8">
+        <item>82</item>
+        <item>86</item>
+        <item>58 v</item>
+        <item>87</item>
+        <item>84</item>
+        <item>80</item>
+    </string-array>
+    <string-array name="N2S9">
+        <item>100</item>
+        <item>110</item>
+        <item>100</item>
+        <item>101v</item>
+        <item>010</item>
+        <item>102</item>
+    </string-array>
+    <string-array name="N2S10">
+        <item>345654</item>
+        <item>764306</item>
+        <item>546652</item>
+        <item>457898</item>
+        <item>987043 v</item>
+        <item>453574</item>
+    </string-array>
+    <string-array name="N2S11">
+        <item>3</item>
+        <item>3</item>
+        <item>3</item>
+        <item>2 v</item>
+        <item>3</item>
+        <item>3</item>
+    </string-array>
+    <string-array name="N2S12">
+        <item>3</item>
+        <item>3</item>
+        <item>3</item>
+        <item>2 v</item>
+        <item>3</item>
+        <item>3</item>
+    </string-array>
 </resources>
