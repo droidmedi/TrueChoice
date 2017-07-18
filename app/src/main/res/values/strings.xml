@@ -27,20 +27,20 @@
     <string name="tv6">tv6</string>
 
     <string-array name="N1S1">
-        <item>1</item>
         <item>2 v</item>
+        <item>1</item>
         <item>1</item>
         <item>1</item>
         <item>1</item>
         <item>1</item>
    </string-array>
     <string-array name="N1S2">
+        <item>7 v</item>
         <item>3</item>
         <item>3</item>
         <item>3</item>
         <item>3</item>
         <item>3</item>
-        <item>7</item>
     </string-array>
     <string-array name="N1S3">
         <item>12</item>
@@ -99,10 +99,10 @@
         <item>6</item>
     </string-array>
     <string-array name="N1S10">
-        <item>3</item>
-        <item>3</item>
-        <item>3</item>
         <item>2 v</item>
+        <item>3</item>
+        <item>3</item>
+        <item>3</item>
         <item>3</item>
         <item>3</item>
     </string-array>
@@ -182,8 +182,8 @@
     <string-array name="N2S8">
         <item>82</item>
         <item>86</item>
-        <item>58 v</item>
-        <item>87</item>
+        <item>58</item>
+        <item>87 v</item>
         <item>84</item>
         <item>80</item>
     </string-array>
@@ -191,7 +191,7 @@
         <item>100</item>
         <item>110</item>
         <item>100</item>
-        <item>101v</item>
+        <item>101 v</item>
         <item>010</item>
         <item>102</item>
     </string-array>

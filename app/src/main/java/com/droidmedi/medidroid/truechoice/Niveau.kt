@@ -13,6 +13,8 @@ import kotlinx.android.synthetic.main.content_niveau.*
 
 var niveau =""
 
+
+
 class Niveau : AppCompatActivity() {
 
 
@@ -34,6 +36,8 @@ class Niveau : AppCompatActivity() {
             btnN1.setOnClickListener {
                niveau="niveau1"
                 startActivity(Intent(this, Objet::class.java))
+
+
             }
             btnN2.setOnClickListener {
                niveau="niveau2"
@@ -107,6 +111,9 @@ class Niveau : AppCompatActivity() {
             }
         }
 
+
+    //    tvscor1.setText(score1)
+        tvscor2.setText(score2)
 
     }
 

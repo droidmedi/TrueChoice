@@ -1,5 +1,6 @@
 package com.droidmedi.medidroid.truechoice
 
+import android.content.Intent
 import android.media.MediaPlayer
 import android.os.Bundle
 import android.support.design.widget.FloatingActionButton
@@ -10,6 +11,8 @@ import android.widget.Toast
 import kotlinx.android.synthetic.main.content_number.*
 
 var scor =0
+var score1 =""
+var score2 =""
 
 class Number : AppCompatActivity() {
     internal var serieN1 = intArrayOf(R.array.N1S1, R.array.N1S2, R.array.N1S3, R.array.N1S4, R.array.N1S5, R.array.N1S6, R.array.N1S7, R.array.N1S8, R.array.N1S9 , R.array.N1S10,R.array.N1S11)
@@ -61,6 +64,7 @@ class Number : AppCompatActivity() {
             changearray(i)
 
         }
+
         case3.setOnClickListener {
             sn=sn+1
             cn = tv3.text as String
@@ -96,15 +100,13 @@ class Number : AppCompatActivity() {
       //  Toast.makeText(applicationContext, "fin oslna" + i , Toast.LENGTH_LONG).show()
 
      //  testresult(niveau ,sn,tnn)
-        Toast.makeText(applicationContext, "ha sahih " + tnn +" ha selected "+ cnn +"ha i "+i , Toast.LENGTH_LONG).show()
-        if (i==1 && tnn.equals(cnn)){
-            scor = scor +1
-            vrais(tnn)
 
-        }
-        if (i<10 && tnn.equals(cnn)){
+
+        if (i<10  && tnn.equals(cnn)){
             scor = scor +1
             vrais(tnn)
+       //     Toast.makeText(applicationContext, "ha sahih " + tnn +" ha selected "+ cnn +"ha i "+i , Toast.LENGTH_LONG).show()
+
 
         }
         if (i<10 && tnn != cnn) {
@@ -115,10 +117,22 @@ class Number : AppCompatActivity() {
               scor = scor + 1
               makesound()
               Toast.makeText(applicationContext, "votre score et :" + scor + "/10", Toast.LENGTH_LONG).show()
+              score1="score :"+ scor
+              startActivity(Intent(this, Niveau::class.java))
               finish()
           }
             else{
+
               Toast.makeText(applicationContext, "votre score et :"+ scor +"/10", Toast.LENGTH_LONG).show()
+
+              if (niveau=="niveau1") {
+                  niveau="niveau1"
+                  score1="score :"+ scor}
+              if (niveau=="niveau2") {
+                  niveau="niveau2"
+                  score2="score :"+ scor}
+
+              startActivity(Intent(this, Niveau::class.java))
               finish()
           }
 
@@ -152,7 +166,7 @@ class Number : AppCompatActivity() {
 
         if (ArrayNumber[0].endsWith("v")){
             tv1.setText(ArrayNumber[0].substring(0,ArrayNumber[0].length-2))
-            tn=ArrayNumber[0].substring(0,ArrayNumber[0].length-1)
+            tn=ArrayNumber[0].substring(0,ArrayNumber[0].length-2)
         }
         else {tv1.setText(ArrayNumber[0])}
 
