@@ -43,11 +43,12 @@ class Number : AppCompatActivity() {
             scor =0
 
         }
-        if (niveau=="niveau2") {
+        if (niveau=="niveau2" || niveau=="niveau3" || niveau=="niveau4") {
             ArrayNumber = resources.getStringArray(serieN2[i])
             scor =0
 
         }
+
         changearray(i)
 
         case1.setOnClickListener {
@@ -117,19 +118,23 @@ class Number : AppCompatActivity() {
               scor = scor + 1
               makesound()
               Toast.makeText(applicationContext, "votre score et :" + scor + "/10", Toast.LENGTH_LONG).show()
-              score1="score :"+ scor
+              if (niveau=="niveau1") {
+                  score1="score :"+ scor}
+              if (niveau=="niveau2") {
+
+                  score2="score :"+ scor}
               startActivity(Intent(this, Niveau::class.java))
               finish()
           }
             else{
 
               Toast.makeText(applicationContext, "votre score et :"+ scor +"/10", Toast.LENGTH_LONG).show()
+              Toast.makeText(applicationContext, "niveau est  :"+ niveau, Toast.LENGTH_LONG).show()
 
               if (niveau=="niveau1") {
-                  niveau="niveau1"
                   score1="score :"+ scor}
               if (niveau=="niveau2") {
-                  niveau="niveau2"
+
                   score2="score :"+ scor}
 
               startActivity(Intent(this, Niveau::class.java))

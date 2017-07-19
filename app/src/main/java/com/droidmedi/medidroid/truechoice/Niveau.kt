@@ -112,7 +112,7 @@ class Niveau : AppCompatActivity() {
         }
 
 
-    //    tvscor1.setText(score1)
+        tvscor1.setText(score1)
         tvscor2.setText(score2)
 
     }
