@@ -35,11 +35,11 @@
         <item>1</item>
    </string-array>
     <string-array name="N1S2">
-        <item>7 v</item>
         <item>3</item>
         <item>3</item>
         <item>3</item>
         <item>3</item>
+        <item>5 v</item>
         <item>3</item>
     </string-array>
     <string-array name="N1S3">
@@ -67,9 +67,9 @@
         <item>0</item>
     </string-array>
     <string-array name="N1S6">
-        <item>5</item>
-        <item>5</item>
         <item>7 v</item>
+        <item>5</item>
+        <item>5</item>
         <item>5</item>
         <item>5</item>
         <item>5</item>
@@ -83,28 +83,28 @@
         <item>4</item>
     </string-array>
     <string-array name="N1S8">
-        <item>2</item>
-        <item>4</item>
-        <item>5 v</item>
-        <item>8</item>
-        <item>10</item>
-        <item>12</item>
+        <item>11</item>
+        <item>11</item>
+        <item>17 v</item>
+        <item>11</item>
+        <item>11</item>
+        <item>11</item>
     </string-array>
     <string-array name="N1S9">
-        <item>1</item>
-        <item>2</item>
-        <item>3</item>
-        <item>7 v</item>
-        <item>5</item>
-        <item>6</item>
+        <item>100</item>
+        <item>110 v</item>
+        <item>100</item>
+        <item>100</item>
+        <item>100</item>
+        <item>100</item>
     </string-array>
     <string-array name="N1S10">
-        <item>2 v</item>
-        <item>3</item>
-        <item>3</item>
-        <item>3</item>
-        <item>3</item>
-        <item>3</item>
+        <item>333</item>
+        <item>333</item>
+        <item>333</item>
+        <item>333</item>
+        <item>333</item>
+        <item>353 v</item>
     </string-array>
     <string-array name="N1S11">
         <item>3</item>
@@ -196,12 +196,12 @@
         <item>102</item>
     </string-array>
     <string-array name="N2S10">
-        <item>345654</item>
-        <item>764306</item>
-        <item>546652</item>
-        <item>457898</item>
-        <item>987043 v</item>
-        <item>453574</item>
+        <item>3454</item>
+        <item>7606</item>
+        <item>5452</item>
+        <item>4798</item>
+        <item>9743 v</item>
+        <item>3574</item>
     </string-array>
     <string-array name="N2S11">
         <item>3</item>

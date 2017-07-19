@@ -119,23 +119,22 @@ class Number : AppCompatActivity() {
               makesound()
               Toast.makeText(applicationContext, "votre score et :" + scor + "/10", Toast.LENGTH_LONG).show()
               if (niveau=="niveau1") {
-                  score1="score :"+ scor}
+                  score1="score : "+ scor+"/10"}
               if (niveau=="niveau2") {
 
-                  score2="score :"+ scor}
+                  score2="score : "+ scor+"/10"}
               startActivity(Intent(this, Niveau::class.java))
               finish()
           }
             else{
 
               Toast.makeText(applicationContext, "votre score et :"+ scor +"/10", Toast.LENGTH_LONG).show()
-              Toast.makeText(applicationContext, "niveau est  :"+ niveau, Toast.LENGTH_LONG).show()
 
               if (niveau=="niveau1") {
-                  score1="score :"+ scor}
+                  score1="score : "+ scor+"/10"}
               if (niveau=="niveau2") {
 
-                  score2="score :"+ scor}
+                  score2="score : "+ scor+"/10"}
 
               startActivity(Intent(this, Niveau::class.java))
               finish()

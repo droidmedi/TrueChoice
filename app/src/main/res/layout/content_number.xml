@@ -47,7 +47,9 @@
                 android:id="@+id/case1"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
+                android:layout_margin="8dp"
                 android:layout_weight="1"
+                android:background="@color/colorcase"
                 android:gravity="center">
 
                 <TableRow
@@ -70,7 +72,9 @@
                 android:id="@+id/case2"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
+                android:layout_margin="8dp"
                 android:layout_weight="1"
+                android:background="@color/colorcase"
                 android:gravity="center">
 
                 <TableRow
@@ -93,7 +97,9 @@
                 android:id="@+id/case3"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
+                android:layout_margin="8dp"
                 android:layout_weight="1"
+                android:background="@color/colorcase"
                 android:gravity="center">
 
                 <TableRow
@@ -122,7 +128,9 @@
                 android:id="@+id/case4"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
+                android:layout_margin="8dp"
                 android:layout_weight="1"
+                android:background="@color/colorcase"
                 android:gravity="center">
 
                 <TableRow
@@ -145,7 +153,9 @@
                 android:id="@+id/case5"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
+                android:layout_margin="8dp"
                 android:layout_weight="1"
+                android:background="@color/colorcase"
                 android:gravity="center">
 
                 <TableRow
@@ -168,7 +178,9 @@
                 android:id="@+id/case6"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
+                android:layout_margin="8dp"
                 android:layout_weight="1"
+                android:background="@color/colorcase"
                 android:gravity="center">
 
                 <TableRow

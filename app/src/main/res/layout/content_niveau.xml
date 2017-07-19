@@ -32,19 +32,13 @@
 
                 <Button
                     android:id="@+id/btnN1"
-                    android:layout_width="wrap_content"
+                    android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginBottom="10dp"
                     android:layout_marginTop="10dp"
                     android:layout_weight="1"
                     android:text="@string/niveau1" />
 
-                <TextView
-                    android:id="@+id/tvscor1"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="1"
-                    android:text="TextView" />
             </LinearLayout>
 
             <LinearLayout
@@ -54,19 +48,13 @@
 
                 <Button
                     android:id="@+id/btnN2"
-                    android:layout_width="wrap_content"
+                    android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginBottom="10dp"
                     android:layout_marginTop="10dp"
                     android:layout_weight="1"
                     android:text="@string/niveau2" />
 
-                <TextView
-                    android:id="@+id/tvscor2"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="1"
-                    android:text="TextView" />
             </LinearLayout>
 
             <LinearLayout

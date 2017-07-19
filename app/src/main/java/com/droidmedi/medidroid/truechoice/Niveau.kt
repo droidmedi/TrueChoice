@@ -76,10 +76,12 @@ class Niveau : AppCompatActivity() {
             btnN1.setOnClickListener {
                niveau="niveau1"
                 startActivity(Intent(this, Number::class.java))
+                finish()
             }
             btnN2.setOnClickListener {
                 niveau="niveau2"
                 startActivity(Intent(this, Number::class.java))
+                finish()
             }
             btnN3.setOnClickListener {
                niveau="niveau3"
@@ -112,8 +114,13 @@ class Niveau : AppCompatActivity() {
         }
 
 
-        tvscor1.setText(score1)
-        tvscor2.setText(score2)
+        btnN1.setText("NIVEAU1 "+score1)
+        btnN2.setText("NIVEAU2 "+score2)
+
+    }
+
+    override fun onBackPressed() {
+    finish()
 
     }
 

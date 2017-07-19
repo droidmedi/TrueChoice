@@ -39,6 +39,11 @@ class Acceuil : AppCompatActivity() {
             page = "objet"
             startActivity(Intent(this, Niveau::class.java))
         }
+
+        btnExit.setOnClickListener {
+            finish()
+        }
+
     }
 
     override fun onCreateOptionsMenu(menu: Menu): Boolean {
