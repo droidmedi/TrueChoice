@@ -92,7 +92,7 @@
     </string-array>
     <string-array name="N1S9">
         <item>100</item>
-        <item>110 v</item>
+        <item>101 v</item>
         <item>100</item>
         <item>100</item>
         <item>100</item>
@@ -122,6 +122,8 @@
         <item>3</item>
         <item>3</item>
     </string-array>
+
+
     <!-- ............................niveveau2........................... -->
     <string-array name="N2S1">
         <item>2</item>
@@ -212,6 +214,300 @@
         <item>3</item>
     </string-array>
     <string-array name="N2S12">
+        <item>3</item>
+        <item>3</item>
+        <item>3</item>
+        <item>2 v</item>
+        <item>3</item>
+        <item>3</item>
+    </string-array>
+
+    <!-- ............................niveveau3........................... -->
+    <string-array name="N3S1">
+        <item>1</item>
+        <item>1</item>
+        <item>1</item>
+        <item>2 v</item>
+        <item>1</item>
+        <item>1</item>
+    </string-array>
+    <string-array name="N3S2">
+        <item>5</item>
+        <item>4 v</item>
+        <item>5</item>
+        <item>5</item>
+        <item>5</item>
+        <item>5</item>
+    </string-array>
+    <string-array name="N3S3">
+        <item>15</item>
+        <item>17</item>
+        <item>17</item>
+        <item>19</item>
+        <item>14 v</item>
+        <item>11</item>
+    </string-array>
+    <string-array name="N3S4">
+        <item>71</item>
+        <item>74 v</item>
+        <item>75</item>
+        <item>77</item>
+        <item>19</item>
+        <item>73</item>
+    </string-array>
+    <string-array name="N3S5">
+        <item>21</item>
+        <item>43</item>
+        <item>38 v</item>
+        <item>65</item>
+        <item>87</item>
+        <item>43</item>
+    </string-array>
+    <string-array name="N3S6">
+        <item>211</item>
+        <item>433</item>
+        <item>346 v</item>
+        <item>459</item>
+        <item>657</item>
+        <item>875</item>
+    </string-array>
+    <string-array name="N3S7">
+        <item>123</item>
+        <item>989</item>
+        <item>567</item>
+        <item>651</item>
+        <item>675</item>
+        <item>460 v</item>
+    </string-array>
+    <string-array name="N3S8">
+        <item>81</item>
+        <item>85</item>
+        <item>57</item>
+        <item>78 v</item>
+        <item>83</item>
+        <item>89</item>
+    </string-array>
+    <string-array name="N3S9">
+        <item>101</item>
+        <item>111</item>
+        <item>101</item>
+        <item>110 v</item>
+        <item>011</item>
+        <item>101</item>
+    </string-array>
+    <string-array name="N3S10">
+        <item>3455</item>
+        <item>7607</item>
+        <item>5453</item>
+        <item>4799</item>
+        <item>9748 v</item>
+        <item>3575</item>
+    </string-array>
+    <string-array name="N3S11">
+        <item>3</item>
+        <item>3</item>
+        <item>3</item>
+        <item>2 v</item>
+        <item>3</item>
+        <item>3</item>
+    </string-array>
+    <string-array name="N3S12">
+        <item>3</item>
+        <item>3</item>
+        <item>3</item>
+        <item>2 v</item>
+        <item>3</item>
+        <item>3</item>
+    </string-array>
+
+    <!-- ............................niveau4........................... -->
+    <string-array name="N4S1">
+        <item>9 v</item>
+        <item>8</item>
+        <item>8</item>
+        <item>8</item>
+        <item>8</item>
+        <item>8</item>
+    </string-array>
+    <string-array name="N4S2">
+        <item>5</item>
+        <item>5</item>
+        <item>5</item>
+        <item>6 v</item>
+        <item>5</item>
+        <item>5</item>
+    </string-array>
+    <string-array name="N4S3">
+        <item>13</item>
+        <item>15</item>
+        <item>17</item>
+        <item>19</item>
+        <item>11</item>
+        <item>12 v</item>
+    </string-array>
+    <string-array name="N4S4">
+        <item>62</item>
+        <item>88</item>
+        <item>76</item>
+        <item>73 v</item>
+        <item>84</item>
+        <item>70</item>
+    </string-array>
+    <string-array name="N4S5">
+        <item>213</item>
+        <item>434 v</item>
+        <item>387</item>
+        <item>659</item>
+        <item>871</item>
+        <item>435</item>
+    </string-array>
+    <string-array name="N4S6">
+        <item>132</item>
+        <item>232</item>
+        <item>332</item>
+        <item>221 v</item>
+        <item>112</item>
+        <item>212</item>
+    </string-array>
+    <string-array name="N4S7">
+        <item>444</item>
+        <item>444</item>
+        <item>444</item>
+        <item>444</item>
+        <item>444</item>
+        <item>474 v</item>
+    </string-array>
+    <string-array name="N4S8">
+        <item>8190 v</item>
+        <item>8531</item>
+        <item>3465</item>
+        <item>6543</item>
+        <item>8341</item>
+        <item>8967</item>
+    </string-array>
+    <string-array name="N4S9">
+        <item>1101</item>
+        <item>0111</item>
+        <item>0101</item>
+        <item>1100 v</item>
+        <item>0111</item>
+        <item>1111</item>
+    </string-array>
+    <string-array name="N4S10">
+        <item>3455 v</item>
+        <item>3214</item>
+        <item>3542</item>
+        <item>3102</item>
+        <item>5340 v</item>
+        <item>3524</item>
+    </string-array>
+    <string-array name="N4S11">
+        <item>3</item>
+        <item>3</item>
+        <item>3</item>
+        <item>2 v</item>
+        <item>3</item>
+        <item>3</item>
+    </string-array>
+    <string-array name="N4S12">
+        <item>3</item>
+        <item>3</item>
+        <item>3</item>
+        <item>2 v</item>
+        <item>3</item>
+        <item>3</item>
+    </string-array>
+
+    <!-- ............................niveau5........................... -->
+    <string-array name="N5S1">
+        <item>1</item>
+        <item>1</item>
+        <item>1</item>
+        <item>2 v</item>
+        <item>1</item>
+        <item>1</item>
+    </string-array>
+    <string-array name="N5S2">
+        <item>5</item>
+        <item>4 v</item>
+        <item>5</item>
+        <item>5</item>
+        <item>5</item>
+        <item>5</item>
+    </string-array>
+    <string-array name="N5S3">
+        <item>15</item>
+        <item>17</item>
+        <item>17</item>
+        <item>19</item>
+        <item>14 v</item>
+        <item>11</item>
+    </string-array>
+    <string-array name="N5S4">
+        <item>71</item>
+        <item>74 v</item>
+        <item>75</item>
+        <item>77</item>
+        <item>19</item>
+        <item>73</item>
+    </string-array>
+    <string-array name="N5S5">
+        <item>21</item>
+        <item>43</item>
+        <item>38 v</item>
+        <item>65</item>
+        <item>87</item>
+        <item>43</item>
+    </string-array>
+    <string-array name="N5S6">
+        <item>211</item>
+        <item>433</item>
+        <item>346 v</item>
+        <item>459</item>
+        <item>657</item>
+        <item>875</item>
+    </string-array>
+    <string-array name="N5S7">
+        <item>123</item>
+        <item>989</item>
+        <item>567</item>
+        <item>651</item>
+        <item>675</item>
+        <item>460 v</item>
+    </string-array>
+    <string-array name="N5S8">
+        <item>81</item>
+        <item>85</item>
+        <item>57</item>
+        <item>78 v</item>
+        <item>83</item>
+        <item>89</item>
+    </string-array>
+    <string-array name="N5S9">
+        <item>101</item>
+        <item>111</item>
+        <item>101</item>
+        <item>110 v</item>
+        <item>011</item>
+        <item>101</item>
+    </string-array>
+    <string-array name="N5S10">
+        <item>3455</item>
+        <item>7607</item>
+        <item>5453</item>
+        <item>4799</item>
+        <item>9748 v</item>
+        <item>3575</item>
+    </string-array>
+    <string-array name="N5S11">
+        <item>3</item>
+        <item>3</item>
+        <item>3</item>
+        <item>2 v</item>
+        <item>3</item>
+        <item>3</item>
+    </string-array>
+    <string-array name="N5S12">
         <item>3</item>
         <item>3</item>
         <item>3</item>

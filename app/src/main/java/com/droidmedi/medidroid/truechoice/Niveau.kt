@@ -116,12 +116,13 @@ class Niveau : AppCompatActivity() {
 
         btnN1.setText("NIVEAU1 "+score1)
         btnN2.setText("NIVEAU2 "+score2)
+        btnN3.setText("NIVEAU3 "+score3)
+        btnN4.setText("NIVEAU4 "+score4)
 
     }
 
     override fun onBackPressed() {
     finish()
-
     }
 
 }

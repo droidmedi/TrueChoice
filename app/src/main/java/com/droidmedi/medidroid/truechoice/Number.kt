@@ -13,10 +13,14 @@ import kotlinx.android.synthetic.main.content_number.*
 var scor =0
 var score1 =""
 var score2 =""
+var score3 =""
+var score4 =""
 
 class Number : AppCompatActivity() {
     internal var serieN1 = intArrayOf(R.array.N1S1, R.array.N1S2, R.array.N1S3, R.array.N1S4, R.array.N1S5, R.array.N1S6, R.array.N1S7, R.array.N1S8, R.array.N1S9 , R.array.N1S10,R.array.N1S11)
     internal var serieN2 = intArrayOf(R.array.N2S1, R.array.N2S2, R.array.N2S3, R.array.N2S4, R.array.N2S5, R.array.N2S6, R.array.N2S7, R.array.N2S8, R.array.N2S9 , R.array.N2S10,R.array.N2S11)
+    internal var serieN3 = intArrayOf(R.array.N3S1, R.array.N3S2, R.array.N3S3, R.array.N3S4, R.array.N3S5, R.array.N3S6, R.array.N3S7, R.array.N3S8, R.array.N3S9 , R.array.N3S10,R.array.N3S11)
+    internal var serieN4 = intArrayOf(R.array.N4S1, R.array.N4S2, R.array.N4S3, R.array.N4S4, R.array.N4S5, R.array.N4S6, R.array.N4S7, R.array.N4S8, R.array.N4S9 , R.array.N4S10,R.array.N4S11)
 
     internal var i = 0
     internal var sn = 1
@@ -43,8 +47,17 @@ class Number : AppCompatActivity() {
             scor =0
 
         }
-        if (niveau=="niveau2" || niveau=="niveau3" || niveau=="niveau4") {
+        if (niveau=="niveau2" ) {
             ArrayNumber = resources.getStringArray(serieN2[i])
+            scor =0
+        }
+        if (niveau=="niveau3") {
+            ArrayNumber = resources.getStringArray(serieN3[i])
+            scor =0
+
+        }
+        if (niveau=="niveau4" || niveau=="niveau5" || niveau=="niveau6") {
+            ArrayNumber = resources.getStringArray(serieN4[i])
             scor =0
 
         }
@@ -99,17 +112,12 @@ class Number : AppCompatActivity() {
     private fun  resultat(tnn: String, cnn: String) {
         i=i+1
       //  Toast.makeText(applicationContext, "fin oslna" + i , Toast.LENGTH_LONG).show()
-
      //  testresult(niveau ,sn,tnn)
-
-
         if (i<10  && tnn.equals(cnn)){
             scor = scor +1
             vrais(tnn)
        //     Toast.makeText(applicationContext, "ha sahih " + tnn +" ha selected "+ cnn +"ha i "+i , Toast.LENGTH_LONG).show()
-
-
-        }
+       }
         if (i<10 && tnn != cnn) {
             faux()
         }
@@ -121,8 +129,11 @@ class Number : AppCompatActivity() {
               if (niveau=="niveau1") {
                   score1="score : "+ scor+"/10"}
               if (niveau=="niveau2") {
-
                   score2="score : "+ scor+"/10"}
+              if (niveau=="niveau3") {
+                  score3="score : "+ scor+"/10"}
+              if (niveau=="niveau4") {
+                  score4="score : "+ scor+"/10"}
               startActivity(Intent(this, Niveau::class.java))
               finish()
           }
@@ -135,7 +146,10 @@ class Number : AppCompatActivity() {
               if (niveau=="niveau2") {
 
                   score2="score : "+ scor+"/10"}
-
+              if (niveau=="niveau3") {
+                  score3="score : "+ scor+"/10"}
+              if (niveau=="niveau4") {
+                  score4="score : "+ scor+"/10"}
               startActivity(Intent(this, Niveau::class.java))
               finish()
           }
@@ -167,6 +181,10 @@ class Number : AppCompatActivity() {
         ArrayNumber = resources.getStringArray(serieN1[i])}
         if (niveau=="niveau2") {
             ArrayNumber = resources.getStringArray(serieN2[i])}
+        if (niveau=="niveau3") {
+            ArrayNumber = resources.getStringArray(serieN3[i])}
+        if (niveau=="niveau4") {
+            ArrayNumber = resources.getStringArray(serieN4[i])}
 
         if (ArrayNumber[0].endsWith("v")){
             tv1.setText(ArrayNumber[0].substring(0,ArrayNumber[0].length-2))
